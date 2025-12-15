@@ -197,6 +197,17 @@
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
+    @media (max-width: 360px) {
+      .main-grid {
+        grid-template-columns: 1fr;
+      }
+      .menu-lateral {
+        display: none;
+      }
+      .header-left .header-title {
+        display: none;
+      }
+    }
 
     .card-title {
       font-size: 1rem;
@@ -395,9 +406,7 @@
           <div class="card-title">
             <span class="warning-icon">⬆</span>Pagamentos por Liquidar
           </div>
-          <div class="card-content">
-            Entidade Multibanco: 20697
-          </div>
+         
           <table>
             <thead>
               <tr>
